@@ -65,6 +65,7 @@ anchors:
 - &ccp_default_vars
   instance_type: n1-standard-1
   PLATFORM: centos6
+  mirrors: false
 
 - &destroy_common
   action: destroy

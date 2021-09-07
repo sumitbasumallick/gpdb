@@ -1,7 +1,7 @@
 @gpstart
 Feature: gpstart behave tests
 
-    @concourse_cluster
+    #@concourse_cluster
     @demo_cluster
     Scenario: gpstart correctly identifies down segments
         Given the database is running
@@ -27,7 +27,7 @@ Feature: gpstart behave tests
           And gpstart should return a return code of 0
           And all the segments are running
 
-    @concourse_cluster
+    #@concourse_cluster
     @demo_cluster
     Scenario: gpstart starts even if a segment host is unreachable
         Given the database is running
